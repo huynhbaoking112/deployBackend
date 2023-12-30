@@ -41,7 +41,7 @@ const MessageRouter=require("./routes/messages")
 const NotiRouter=require("./routes/notification")
 
 //connect db with mongoose
-mongoose.connect(process.env.MONGO).then(()=>{
+mongoose.connect("mongodb+srv://king77nt54321:kingking@cluster0.yohos22.mongodb.net/social?retryWrites=true&w=majority").then(()=>{
     console.log("DB connect success");
 })
 
@@ -66,7 +66,7 @@ app.use((err,req,res,next)=>{
   })
 })
 
-const server=app.listen(process.env.PORT||5000,()=>{
+const server=app.listen(8000,()=>{
     console.log("Server is running!");
 })
 
