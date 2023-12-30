@@ -17,7 +17,7 @@ const upload = multer({
       },
       filename: function(req, file, cb) {
         const filename=Date.now()+file.originalname
-        req.body.img="http://localhost:8000/"+filename
+        req.body.img="https://deploybackend-p9x3.onrender.com/"+filename
         cb(null,filename);
       },
     }),
