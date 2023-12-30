@@ -9,7 +9,7 @@ router.route("/").post(upload.single("image"),HandleCreatePost)
 
 //update a post //delete a post //get a post
 
-router.route("/:id").patch(HandleToken,HandleUpdatePost).delete(HandleToken,HandleDeletePost).get(HandleGetPost)
+router.route("/:id").patch(HandleToken,HandleUpdatePost).delete(HandleDeletePost).get(HandleGetPost)
 //userId//userId*******************************************************
 
 //shareThePost
